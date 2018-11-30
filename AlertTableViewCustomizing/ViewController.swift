@@ -4,9 +4,20 @@
 //  Copyright © 2018 customizing. All rights reserved.
 import UIKit
 class ViewController: UIViewController {
-
+    //menu 버튼의 변수연결
+    @IBOutlet weak var menu: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //사이드 바를 토글하는 코드
+        if let revealVC = self.revealViewController(){
+            self.menu.target = revealVC
+            self.menu.action = #selector(revealVC.revealToggle(_:))
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
+        }
+        
+        
         let csButton = CSButton(type: .circle)
         csButton.frame = CGRect(x: 200, y: 200, width: 200, height: 20)
         let csButton2 = CSButton(frame: .init(x: 50, y: 50, width: 100, height: 40))

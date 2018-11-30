@@ -14,6 +14,7 @@
 		AA2234E121B0C4D700710798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2234DF21B0C4D700710798 /* LaunchScreen.storyboard */; };
 		AA2234E721B0C4F100710798 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2234E621B0C4F100710798 /* ListViewController.swift */; };
 		AA2234E921B0D42900710798 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2234E821B0D42900710798 /* CSButton.swift */; };
+		AA2234F521B105BD00710798 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2234F421B105BD00710798 /* SWRevealViewController.m */; };
 		AAB53F0F21AFB67D008A3DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB53F0E21AFB67D008A3DD7 /* AppDelegate.swift */; };
 		AAB53F1121AFB67D008A3DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB53F1021AFB67D008A3DD7 /* ViewController.swift */; };
 		AAB53F1421AFB67D008A3DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB53F1221AFB67D008A3DD7 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 		AA2234E221B0C4D700710798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2234E621B0C4F100710798 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		AA2234E821B0D42900710798 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
+		AA2234F221B105BC00710798 /* AlertTableViewCustomizing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlertTableViewCustomizing-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA2234F321B105BD00710798 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		AA2234F421B105BD00710798 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		AAB53F0B21AFB67D008A3DD7 /* Customizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Customizing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB53F0E21AFB67D008A3DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAB53F1021AFB67D008A3DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		AA2234D521B0C4D100710798 /* AlertTableViewCustomizing */ = {
 			isa = PBXGroup;
 			children = (
+				AA2234F321B105BD00710798 /* SWRevealViewController.h */,
+				AA2234F421B105BD00710798 /* SWRevealViewController.m */,
 				AA2234D621B0C4D100710798 /* AppDelegate.swift */,
 				AA2234D821B0C4D100710798 /* ViewController.swift */,
 				AA2234E621B0C4F100710798 /* ListViewController.swift */,
@@ -77,6 +83,7 @@
 				AA2234DD21B0C4D700710798 /* Assets.xcassets */,
 				AA2234DF21B0C4D700710798 /* LaunchScreen.storyboard */,
 				AA2234E221B0C4D700710798 /* Info.plist */,
+				AA2234F221B105BC00710798 /* AlertTableViewCustomizing-Bridging-Header.h */,
 			);
 			path = AlertTableViewCustomizing;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 				TargetAttributes = {
 					AA2234D321B0C4D100710798 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					AAB53F0A21AFB67D008A3DD7 = {
 						CreatedOnToolsVersion = 10.1;
@@ -232,6 +240,7 @@
 			files = (
 				AA2234D921B0C4D100710798 /* ViewController.swift in Sources */,
 				AA2234D721B0C4D100710798 /* AppDelegate.swift in Sources */,
+				AA2234F521B105BD00710798 /* SWRevealViewController.m in Sources */,
 				AA2234E721B0C4F100710798 /* ListViewController.swift in Sources */,
 				AA2234E921B0D42900710798 /* CSButton.swift in Sources */,
 			);
@@ -288,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlertTableViewCustomizing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -296,6 +306,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "naver.knock-otd999.AlertTableViewCustomizing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlertTableViewCustomizing/AlertTableViewCustomizing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlertTableViewCustomizing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "naver.knock-otd999.AlertTableViewCustomizing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlertTableViewCustomizing/AlertTableViewCustomizing-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

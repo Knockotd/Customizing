@@ -72,11 +72,11 @@
 				AA2234D621B0C4D100710798 /* AppDelegate.swift */,
 				AA2234D821B0C4D100710798 /* ViewController.swift */,
 				AA2234E621B0C4F100710798 /* ListViewController.swift */,
+				AA2234E821B0D42900710798 /* CSButton.swift */,
 				AA2234DA21B0C4D100710798 /* Main.storyboard */,
 				AA2234DD21B0C4D700710798 /* Assets.xcassets */,
 				AA2234DF21B0C4D700710798 /* LaunchScreen.storyboard */,
 				AA2234E221B0C4D700710798 /* Info.plist */,
-				AA2234E821B0D42900710798 /* CSButton.swift */,
 			);
 			path = AlertTableViewCustomizing;
 			sourceTree = "<group>";

@@ -7,6 +7,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let csButton = CSButton(type: .circle)
+        csButton.frame = CGRect(x: 200, y: 200, width: 200, height: 20)
+        let csButton2 = CSButton(frame: .init(x: 50, y: 50, width: 100, height: 40))
+        self.view.addSubview(csButton2)
+        self.view.addSubview(csButton)
     }
     //뷰과 화면에 출력될 때 호출되는 메소드
     //오버라이딩(overriding)(재정의) : 기반(상위) 클래스가 가지고 있는 메소드를 파생(하위) 클래스에서 재정의 하는 것으로 기존 메소드의 기능을 확장하기 위해서 하는 것입니다.
